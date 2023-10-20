@@ -4,7 +4,7 @@ from vsdlib.button_style import ButtonStyle
 from vsdlib.widgets import KeyPadWidget
 from vsdlib.colors import grays
 
-from utils import get_asset_path
+from .utils import get_asset_path
 
 from pynput.keyboard import Controller
 
