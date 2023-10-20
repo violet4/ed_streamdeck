@@ -8,6 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 vsdlib = {git = "ssh://git@github.com/violet4/vsdlib.git"}
+pynput = "^1.7.6"
 
 
 [build-system]
