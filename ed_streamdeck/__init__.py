@@ -50,5 +50,5 @@ class EliteDangerousLayout(SubLayout):
             self.edwidget.thing2,
             self.edwidget.thing3,
         ]
-        for i, button in enumerate(buttons):
+        for i, button in enumerate(buttons, 1):
             self.layout.set(button, i)
