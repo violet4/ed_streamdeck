@@ -1,5 +1,3 @@
-import os
-
 from vsdlib.board import Board, BoardLayout, SubLayout
 from vsdlib.buttons import Button
 from vsdlib.button_style import ButtonStyle
@@ -14,8 +12,11 @@ keyboard = Controller()
 
 
 def create_push_button(button:str):
-    def push_button():
+    def push_button(pressed:bool):
+        if not pressed:
+            return
         keyboard.type(button)
+    return push_button
 
 
 class EliteDangerousWidget(KeyPadWidget):
